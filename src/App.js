@@ -1,4 +1,6 @@
 import './App.css';
+import AjaxHooks from './componets/AjaxHooks'
+import RelojHooks from './componets/relojHooks'
 import ContadorHooks from './componets/ContadorHooks'
 import AjaxApi from './componets/Ajaxapis'
 import CicloVida from './componets/CicloVida'
@@ -70,6 +72,10 @@ function App() {
         <AjaxApi/>
         <hr />
         <ContadorHooks />
+        <hr />
+        <RelojHooks />
+        <hr />
+        <AjaxHooks/>
      </section>
     </div>
   );

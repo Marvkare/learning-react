@@ -25,7 +25,7 @@ export default class AjaxApis extends Component {
                 console.log(json)
                 json.results.forEach(el => (
                     fetch(el.url).then((res) => res.json()).then((json) => {
-                        console.log(json)
+                        //console.log(json.sprites.front_default)
                         let pokemon ={
                             id: json.id,
                             name: json.name,
@@ -33,9 +33,7 @@ export default class AjaxApis extends Component {
                         }
 
                         let pokemons = [...this.state.pokemons,pokemon];
-                        this.setState({
-                            pokemons
-                        })
+                        
                     })
 
                 ))
